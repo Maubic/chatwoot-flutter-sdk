@@ -1,3 +1,4 @@
+import 'package:chatwoot_client_sdk/chatwoot_parameters.dart';
 import 'package:chatwoot_client_sdk/data/chatwoot_repository.dart';
 import 'package:chatwoot_client_sdk/data/local/dao/chatwoot_contact_dao.dart';
 import 'package:chatwoot_client_sdk/data/local/dao/chatwoot_conversation_dao.dart';
@@ -11,7 +12,6 @@ import 'package:chatwoot_client_sdk/data/local/local_storage.dart';
 import 'package:chatwoot_client_sdk/data/remote/service/chatwoot_client_api_interceptor.dart';
 import 'package:chatwoot_client_sdk/data/remote/service/chatwoot_client_auth_service.dart';
 import 'package:chatwoot_client_sdk/data/remote/service/chatwoot_client_service.dart';
-import 'package:chatwoot_client_sdk/chatwoot_parameters.dart';
 import 'package:chatwoot_client_sdk/repository_parameters.dart';
 import 'package:dio/dio.dart';
 import 'package:hive_flutter/hive_flutter.dart';

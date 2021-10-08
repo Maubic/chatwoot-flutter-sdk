@@ -1,4 +1,5 @@
 import 'package:chatwoot_client_sdk/chatwoot_client_sdk.dart';
+import 'package:chatwoot_client_sdk/ui/webview/chatwoot_web_chat_dialog.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -49,6 +50,19 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  _showChatwootWebviewDialog() {
+    ChatwootWebChatDialog.show(
+      context,
+      baseUrl: "<<<your-chatwoot-base-url-here>>>",
+      websiteToken: "<<<your-website-token-here>>>",
+      user: ChatwootUser(
+        identifier: "test@test.com",
+        name: "Tester test",
+        email: "test@test.com",
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ChatwootChat(
@@ -65,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
         leading: InkWell(
-          onTap: () => _showChatwootDialog(),
+          onTap: () => _showChatwootWebviewDialog(),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Image.asset("assets/chatwoot_logo.png"),
