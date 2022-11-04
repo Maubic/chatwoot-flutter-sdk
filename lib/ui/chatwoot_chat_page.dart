@@ -425,7 +425,8 @@ class _ChatwootChatState extends State<ChatwootChat> {
                 l10n: widget.l10n,
               ),
             ),
-          ),
+          )
+          /*
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -446,7 +447,9 @@ class _ChatwootChatState extends State<ChatwootChat> {
                 )
               ],
             ),
+
           )
+          */
         ],
       ),
     );
